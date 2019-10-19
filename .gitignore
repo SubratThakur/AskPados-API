@@ -1,0 +1,24 @@
+# IntelliJ User-specific stuff:
+.idea/
+
+# IntelliJ Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# IntelliJ project
+.idea/.name
+.idea/modules.xml
+**/*.iml
+*.iws
+*.ipr
+out
+
+# Gradle build
+.gradle
+target
+
+# Mac folder attributes
+.DS_Store
+
+# This seems to be carried over from another project and may not be necessary. Leaving for now.
+bin
