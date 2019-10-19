@@ -1,4 +1,4 @@
-package com.askpadoos.jwt.controller;
+package com.askpados.jwt.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,6 +1,6 @@
-package com.askpadoos.jwt.dao;
+package com.askpados.jwt.dao;
 
-import com.askpadoos.jwt.model.User;
+import com.askpados.jwt.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

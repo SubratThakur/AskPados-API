@@ -1,12 +1,12 @@
-package com.askpadoos.jwt.controller;
+package com.askpados.jwt.controller;
 
 import java.util.Objects;
 
-import com.askpadoos.jwt.config.JwtTokenUtil;
-import com.askpadoos.jwt.model.JwtRequest;
-import com.askpadoos.jwt.model.JwtResponse;
-import com.askpadoos.jwt.model.UserDTO;
-import com.askpadoos.jwt.service.JwtUserDetailsService;
+import com.askpados.jwt.config.JwtTokenUtil;
+import com.askpados.jwt.model.JwtRequest;
+import com.askpados.jwt.model.JwtResponse;
+import com.askpados.jwt.model.UserDTO;
+import com.askpados.jwt.service.JwtUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -14,7 +14,6 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @CrossOrigin
-public class JwtAuthenticationController {
+public class AuthenticationController {
 
 	@Autowired
 	private AuthenticationManager authenticationManager;

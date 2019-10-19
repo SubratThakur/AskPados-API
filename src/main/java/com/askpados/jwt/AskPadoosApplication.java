@@ -1,4 +1,4 @@
-package com.askpadoos.jwt;
+package com.askpados.jwt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

@@ -1,10 +1,10 @@
-package com.askpadoos.jwt.service;
+package com.askpados.jwt.service;
 
 import java.util.ArrayList;
 
-import com.askpadoos.jwt.dao.UserDao;
-import com.askpadoos.jwt.model.User;
-import com.askpadoos.jwt.model.UserDTO;
+import com.askpados.jwt.dao.UserDao;
+import com.askpados.jwt.model.User;
+import com.askpados.jwt.model.UserDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -27,14 +27,14 @@ public class JwtUserDetailsService implements UserDetailsService {
 		if (user == null) {
 			throw new UsernameNotFoundException("User not found with username: " + username);
 		}
-		return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(),
-				new ArrayList<>());
+		return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), new ArrayList<>());
 	}
 
 	public User save(UserDTO user) {
 		User newUser = new User();
 		newUser.setUsername(user.getUsername());
 		newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
+		newUser.setEmail(user.getEmail());
 		return userDao.save(newUser);
 	}
 

@@ -1,2 +1,2 @@
-# AskPadoos
-Repository for AskPadoos app Authentication 
+# askpados
+Repository for askpados app Authentication 

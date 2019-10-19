@@ -1,4 +1,4 @@
-package com.askpadoos.jwt.model;
+package com.askpados.jwt.model;
 
 import java.io.Serializable;
 

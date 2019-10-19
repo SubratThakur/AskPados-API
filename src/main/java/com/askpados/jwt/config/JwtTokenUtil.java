@@ -1,4 +1,4 @@
-package com.askpadoos.jwt.config;
+package com.askpados.jwt.config;
 
 import java.io.Serializable;
 import java.util.Date;
